@@ -1,0 +1,84 @@
+Body{
+    background-color:black;
+}
+h1 {
+    text-align: center;
+    font-family: 'Chelsea Market', serif;
+    color: red;
+    font-size: 42px;  
+    margin: ;
+}
+
+h1 p {
+    color:blue;
+    font-size: 50px;
+}
+h1 p2{
+    color:yellow;
+    font-size: 42px;
+
+}
+.allButtons {
+    display: flex;
+    
+
+}
+
+#Play {
+    display: flex;
+    background-color: green;
+    border: 2px solid red;
+    color: yellow;
+    font-weight: bold;
+    height: 25px;
+    width: 100px;
+    justify-content: center;
+    
+
+
+}
+
+#green {
+background-color: green;
+padding: 85px;
+border: 6px solid;
+height: 50px;
+width: 25px;
+display: block;
+position: relative;
+
+}
+
+#red {
+background-color: red;
+padding: 85px;
+border: 6px solid;
+height: 50px;
+width: 25px;
+position: relative;
+
+
+}
+
+
+#yellow {
+background-color:yellow;
+padding: 85px;
+border: 6px solid;
+height: 50px;
+width: 25px;
+position: relative;
+
+
+}
+
+
+#blue {
+background-color: blue;
+padding: 85px;
+border: 6px solid;
+height: 50px;
+width: 25px;
+position: relative;
+
+}
