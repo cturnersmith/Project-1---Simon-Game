@@ -6,6 +6,19 @@
     <title>Simon SAYz - A Game!</title>
     <link rel="stylesheet" href = "style.css">
     <link rel = "https://fonts.google.com/specimen/Chelsea+Market">
+
+    <audio id = "1stclip">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3">
+    </audio>
+    <audio id = "2ndclip">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3">
+    </audio>
+    <audio id = "3rdclip">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3">
+    </audio>
+    <audio id = "4thclip">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+    </audio>
 </head>
 <body>
     <header>
@@ -15,18 +28,21 @@
         </div>
     </header>
     <div class = "allButtons">
-        <div class = "button" id="green">greenplacholder</div>
-        <div class = "button" id="red">redplaceholder</div>
-        <div class = "button" id="yellow">yellowplaceholder</div>
-        <div class = "button" id="blue">blueplaceholder</div>
+        <div class = "button" id="green"></div>
+        <div class = "button" id="red"></div>
+    </div>
+     <div class = "SecondSetButtons" >
+        <div class = "button" id="yellow"></div>
+        <div class = "button" id="blue"></div>
     </div>
 
-    <div>
-    <button id="Quit">Quit</button>
+    <div class = "ThirdButtons">
     <button id="Instructions">How To Play</button>
     <button id="Replay">Replay</button>
+    <button id="Quit">Quit</button>
     </div>  
-    <script src = "game.js"></script>
     <footer>Created by Christy Turner Smith</footer>
+
+    <script src = "game.js"></script>
 </body>
 </html>
