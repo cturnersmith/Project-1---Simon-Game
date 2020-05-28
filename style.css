@@ -41,9 +41,24 @@ border-top: 100px solid transparent;
 justify-content: left;
 position: absolute;
 margin: 30px 0px 25px 300px;
-    
+}
 
+.Score {
+    background-color: blue;
+    color: whitesmoke;
+    border: 2px solid red;
+    position: relative;
+    display: inline;;
 
+}
+
+h2 {
+    color: white;
+}
+#play:hover {
+
+box-shadow: inset 15px red;
+box-sizing: border-box;
 }
 
 #green {
@@ -55,8 +70,28 @@ height: 50px;
 width: 25px;
 display: block;
 position: relative;
-
 }
+
+#Play:hover {
+    opacity: 0.5
+}
+
+.button:hover {
+    box-shadow: inset 15px red;
+    box-sizing: border-box;
+}
+
+.ThirdButtons #Instructions:hover {
+opacity: 0.5
+}
+
+.ThirdButtons #Replay:hover {
+    opacity: 0.5
+    }
+
+.ThirdButtons #Quit:hover {
+        opacity: 0.5
+        }
 
 #red {
 background-color: red;
@@ -140,10 +175,7 @@ position: relative;
     height: 100px;
     width: 100px;
     align-content: center;
-    border-color: yellow;
-}
-#Instructions {
-  
+    border-color: yellow;  
 }
 
 #Replay {
