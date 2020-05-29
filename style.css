@@ -45,10 +45,10 @@ margin: 30px 0px 25px 300px;
 
 .Score {
     background-color: blue;
-    color: whitesmoke;
+    color: white;
     border: 2px solid red;
     position: relative;
-    display: inline;;
+    display: inline;
 
 }
 
@@ -63,11 +63,16 @@ box-sizing: border-box;
 
 #green {
 background-color: green;
-padding: 85px;
-border-radius: 50%;
+border-top-left-radius: 200px;
+width: 200px;
+height: 200px;
+border:10px solid white;
+cursor: pointer;
+/* padding: 85px;
+border-radius: 50%; 
 border: 6px solid;
 height: 50px;
-width: 25px;
+width: 25px; */
 display: block;
 position: relative;
 }
@@ -77,7 +82,7 @@ position: relative;
 }
 
 .button:hover {
-    box-shadow: inset 15px red;
+    box-shadow: inset 0px 0px 15px cyan;
     box-sizing: border-box;
 }
 
@@ -95,24 +100,39 @@ opacity: 0.5
 
 #red {
 background-color: red;
-padding: 85px;
+border-top-right-radius: 200px;
+width: 200px;
+height: 200px;
+border:10px solid white;
+cursor: pointer;
+/* padding: 85px;
 border-radius: 50%;
 border: 6px solid;
 height: 50px;
-width: 25px;
+width: 25px; */
 position: relative;
-
-
 }
 
-
+.center p {
+    text-align: center;
+    align-content: center;
+    font-size: 40px;
+    margin: 75px 5px 10px 25px;
+    color:white;
+    font-weight: bold;
+}
 #yellow {
 background-color:yellow;
-padding: 85px;
+border-bottom-left-radius: 200px;
+width: 200px;
+height: 200px;
+border:10px solid white;
+cursor: pointer;
+/* padding: 85px;
 border-radius: 50%;
 border: 6px solid;
 height: 50px;
-width: 25px;
+width: 25px; */
 position: relative;
 
 
@@ -121,11 +141,16 @@ position: relative;
 
 #blue {
 background-color: blue;
-padding: 85px;
+border-bottom-right-radius: 200px;
+width: 200px;
+height: 200px;
+border:10px solid white;
+cursor: pointer;
+/* padding: 85px;
 border-radius: 50%;
 border: 6px solid;
 height: 50px;
-width: 25px;
+width: 25px; */
 position: relative;
 
 }
@@ -192,6 +217,21 @@ footer {
     font-style: italic;
     justify-content: flex-end
 }
+
+.center {
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color:black;
+    top:450px;
+    left: 860px;
+    text-align: center;
+    color:white;
+
+}
+
 
 
 
