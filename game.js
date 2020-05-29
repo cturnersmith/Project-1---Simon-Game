@@ -2,6 +2,9 @@ let GreenButton = document.querySelector("#green");
 let YellowButton = document.querySelector("#yellow");
 let BlueButton = document.querySelector("#blue");
 let RedButton = document.querySelector("#red");
+const playButton = document.querySelector("#Play");
+
+
 
 let guesses = [];
 let clicks = 0;
@@ -10,7 +13,7 @@ GreenButton.addEventListener("click", function(event) {
     GreenButton.style.backgroundColor = "white";
     clicks = clicks+1
     if (clicks === 4) {
-        finishgame()
+        finishgame();
     }
 })
 
@@ -19,7 +22,7 @@ YellowButton.addEventListener("click", function(event) {
    YellowButton.style.backgroundColor = "white";
     clicks = clicks+1
     if (clicks === 4) {
-        finishgame()
+        finishgame();
     }
 })
 
@@ -28,7 +31,8 @@ BlueButton.addEventListener("click", function(event) {
     BlueButton.style.backgroundColor = "white";
     clicks = clicks+1
     if (clicks === 4) {
-        finishgame()}
+        finishgame();
+    }
 })
 
 RedButton.addEventListener("click", function(event) {
@@ -36,13 +40,15 @@ RedButton.addEventListener("click", function(event) {
     RedButton.style.backgroundColor = "white";
     clicks = clicks+1
     if (clicks === 4) {
-        finishgame()}
+        finishgame();
+    }
 })
 function finishgame() {
     if (guesses[0] === "Green"&& guesses[1] === "Yellow" && guesses [2] === "Red" && guesses[3] === "Blue" && guesses){
         alert ("You Won!")
     }
 }
+
 
 async function game() {
 
@@ -65,10 +71,13 @@ BlueButton.style.backgroundColor = "white";
     setTimeout (function () {
      BlueButton.style.backgroundColor = "blue";
     },1000)
+await new Promise(resolve => setTimeout (resolve, 1000));
 
 }
 
-game()
+// game()
+
+playButton.addEventListener('click', game);
 
 
 
