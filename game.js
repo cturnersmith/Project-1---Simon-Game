@@ -4,6 +4,9 @@ let BlueButton = document.querySelector("#blue");
 let RedButton = document.querySelector("#red");
 const playButton = document.querySelector("#Play");
 const resetButton = document.querySelector("#Replay");
+const quitButton = document.querySelector("#Quit");
+let noise = true;
+let score = 0;
 
 const randomColors = function () {
     const colorAllbuttons = ["green", "red", "yellow", "blue"];
@@ -17,11 +20,17 @@ const randomButtons = randomColors();
 
 let guesses = [];
 let clicks = 0;
+
 GreenButton.addEventListener("click", function(event) {
     guesses.push("green");
     GreenButton.style.backgroundColor = "white";
+    if (noise) {
+        let audio = document.getElementById('1stclip');
+        audio.play();
+    }
+    noise = true;
     clicks = clicks+1
-    if (clicks === 4) {
+    if (clicks === 4) { 
         finishgame();
     }
 })
@@ -29,6 +38,11 @@ GreenButton.addEventListener("click", function(event) {
 YellowButton.addEventListener("click", function(event) {
     guesses.push("yellow");
    YellowButton.style.backgroundColor = "white";
+   if (noise) {
+    let audio = document.getElementById('2ndclip');
+    audio.play();
+}
+noise = true;
     clicks = clicks+1
     if (clicks === 4) {
         finishgame();
@@ -38,6 +52,11 @@ YellowButton.addEventListener("click", function(event) {
 BlueButton.addEventListener("click", function(event) {
     guesses.push("blue"); 
     BlueButton.style.backgroundColor = "white";
+    if (noise) {
+        let audio = document.getElementById('3rdclip');
+        audio.play();
+    }
+    noise = true;
     clicks = clicks+1
     if (clicks === 4) {
         finishgame();
@@ -47,6 +66,11 @@ BlueButton.addEventListener("click", function(event) {
 RedButton.addEventListener("click", function(event) {
     guesses.push("red");
     RedButton.style.backgroundColor = "white";
+    if (noise) {
+        let audio = document.getElementById('4thclip');
+        audio.play();
+    }
+    noise = true;
     clicks = clicks+1
     if (clicks === 4) {
         finishgame();
@@ -63,9 +87,9 @@ function finishgame() {
       }
     }
   if (Won) {
-      alert("Simon Says You Won");
+      alert("Simon Says You Won!");
   } else {
-      alert ("Simon Says You Lost");
+      alert ("Simon Says You Lost!");
   }
 };
 
@@ -102,10 +126,9 @@ async function game() {
 
 
     }
-function playGreen(GreenButton) {
-    let audio = document.getElementById("1stclip");
-    audio.play();
-}
+
+    
+
 
 
 
@@ -114,10 +137,18 @@ function playGreen(GreenButton) {
     
 
 
-
+quitButton.addEventListener ('click', ()=> {
+    location.reload();
+    alert("Simon Says Thanks for Playing!");
+    const scoreBoard = document.getElementById ("score");
+      scoreBoard.innerText = "score" + 1;
+      console.log(score);
+})
 console.log(playButton);
 playButton.addEventListener('click', game);
 
 resetButton.addEventListener('click', ()=> {
     location.reload();
+    alert ("Oh so you want to play again!");
 })
+

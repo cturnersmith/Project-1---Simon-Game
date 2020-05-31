@@ -3,11 +3,22 @@ Body{
 }
 h1 {
     text-align: center;
-    font-family: 'Chelsea Market', serif;
+    font-family:'Chelsea Market', cursive;
     color: red;
     font-size: 42px;  
-    margin: ;
+    animation-name: flash;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
 }
+
+@keyframes flash {
+    from {color: red;}
+    to {color: black;}
+}
+
 
 h1 p {
     color:blue;
@@ -41,6 +52,8 @@ border-top: 100px solid transparent;
 justify-content: left;
 position: absolute;
 margin: 30px 0px 25px 300px;
+font-family:'Chelsea Market', cursive;
+font-weight: bold;
 }
 
 .Score {
@@ -49,8 +62,16 @@ margin: 30px 0px 25px 300px;
     border: 2px solid red;
     position: relative;
     display: inline;
-
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
 }
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
 
 h2 {
     color: white;
@@ -161,6 +182,8 @@ position: relative;
     height: 100px;
     background: #ff4040;
     position: relative;
+    font-family: 'Chelsea Market', cursive;
+    color: blue;
    }
   #Quit:before {
     content: "";
@@ -200,7 +223,8 @@ position: relative;
     height: 100px;
     width: 100px;
     align-content: center;
-    border-color: yellow;  
+    border-color: yellow; 
+    font-family: 'Chelsea Market', cursive; 
 }
 
 #Replay {
@@ -210,6 +234,8 @@ position: relative;
     height: 100px;
     width: 100px;
     border-color: green;
+    font-family: 'Chelsea Market', cursive;
+
 }
 
 footer {
@@ -225,12 +251,35 @@ footer {
     height: 200px;
     border-radius: 100%;
     background-color:black;
-    top:450px;
-    left: 860px;
+    top:420px;
+    left: 855px;
     text-align: center;
     color:white;
+    font-family: 'Chelsea Market', cursive;
 
 }
+h5 {
+    color: white;
+    font-family: 'Chelsea Market', cursive; 
+    text-align: center;
+    font-size: 30px;
+}
+
+h4 {
+    color: white;
+    font-family: 'Chelsea Market', cursive; 
+    text-align: center;
+    font-size: 30px;
+}
+
+#back {
+    background-color: red;
+    color: blue;
+    font-family: 'Chelsea Market', cursive; 
+    font-size: 35px;
+    align-items: center;
+}
+
 
 
 
