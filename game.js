@@ -91,8 +91,8 @@ function finishgame() {
   } else {
       alert ("Simon Says You Lost!");
   }
-};
 
+};
 
 async function game() {
     console.log(randomButtons);
@@ -126,17 +126,6 @@ async function game() {
 
 
     }
-
-    
-
-
-
-
-
-  }
-    
-
-
 quitButton.addEventListener ('click', ()=> {
     location.reload();
     alert("Simon Says Thanks for Playing!");
@@ -151,4 +140,4 @@ resetButton.addEventListener('click', ()=> {
     location.reload();
     alert ("Oh so you want to play again!");
 })
-
+}
