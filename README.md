@@ -12,11 +12,7 @@ Wireframe:
 
 
 
-Brief Example:
-
-
-
-List of Features / User Stories
+# List of Features / User Stories
 
 
 	As a user, I should be able to start and quit the game by clicking corresponding buttons
@@ -31,7 +27,7 @@ List of Features / User Stories
 
 	There should be an alert that tells me to try again or play again
 
-List of Technologies Used
+# List of Technologies Used
 
 	HTML
 
@@ -49,7 +45,7 @@ List of Technologies Used
 
 
 
-Installation Instructions / Getting Started
+# Installation Instructions / Getting Started
 
 
 
@@ -58,7 +54,7 @@ This game will not require any special installation requirements or instructions
 
 
 
-Contribution Guidelines
+# Contribution Guidelines
 
 
 cturnersmith/Project-1---Simon-Game
